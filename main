@@ -5,9 +5,9 @@ vehicle_type = int(input("""What type of Canadian vehicle license plate do you w
 . Enter 2 for the Ontario truck license plate
 . Enter 3 for the Ontario bus license plate
 . Enter 4 for the Ontario motorcycle license plate
-. Enter 5 for the Québec car license plate
-. Enter 6 for the Québec motorcycle license plate
-. Enter 7 for the Québec truck license plate
+. Enter 5 for the Quebec car license plate
+. Enter 6 for the Quebec motorcycle license plate
+. Enter 7 for the Quebec truck license plate
 . Enter 8 for the Newfoundland license plate
 . Enter 9 for the Nunavut car license plate
 . Enter 10 for the Nunavut motorcycle license plate
