@@ -1,0 +1,169 @@
+#Run at https://www.programiz.com/python-programming/online-compiler/
+import random
+vehicle_type = int(input("""What type of Canadian vehicle license plate do you want?
+. Enter 1 for the Ontario car license plate
+. Enter 2 for the Ontario truck license plate
+. Enter 3 for the Ontario bus license plate
+. Enter 4 for the Ontario motorcycle license plate
+. Enter 5 for the Québec car license plate
+. Enter 6 for the Québec motorcycle license plate
+. Enter 7 for the Québec truck license plate
+. Enter 8 for the Newfoundland license plate
+. Enter 9 for the Nunavut car license plate
+. Enter 10 for the Nunavut motorcycle license plate
+. Enter 11 for the Alberta car license plate
+. Enter 12 for the Alberta motorcycle license plate
+. Enter 13 for the British Columbia car license plate
+. Enter 14 for the British Columbia motorcycle license plate
+. Enter 15 for the British Columbia truck license plate
+. Enter 16 for the Manitoba car license plate
+. Enter 17 for the Manitoba motorcycle license plate
+. Enter 18 for the New Brunswick car license plate
+. Enter 19 for the New Brunswick motorcycle license plate
+. Enter 20 for the Nova Scotia car license plate
+. Enter 21 for the Nova Scotia Motorcycle license plate
+. Enter 22 for the Prince Edward Island car license plate
+. Enter 23 for the Prince Edward Island motorcycle license plate
+. Enter 24 for the Saskatchewan car license plate
+. Enter 25 for the Saskatchewan motorcycle license plate
+. Enter 26 for the Yukon car license plate
+. Enter 27 for the Yukon motorcycle license plate
+. Enter 28 for the Northwest Territories car license plate
+. Enter 29 for the Northwest Territories motorcycle license plate
+Your Answer: """))
+# Variables
+licenseplate = ''
+uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+numbers = '1234567890'
+# Functions
+    # Generator
+def generate(license_format):
+    licenseplate = ''
+    for digit in range(len(license_format)):
+        if license_format[digit] == 'N':
+            randChar = random.choice(numbers)
+            licenseplate = licenseplate + randChar
+        elif license_format[digit] == 'L':
+            randChar = random.choice(uppercase)
+            licenseplate = licenseplate + randChar
+        else: 
+            licenseplate = licenseplate + license_format[digit]
+    print(licenseplate)  
+    # Other
+def ontariocar():
+    generate('LLLL NNN')
+def ontariotruck():
+    generate('LL NNNNN')
+def ontariobus():
+    generate('NNN NLL')
+def ontariomotorcycle():
+    generate('NLNLN')
+def québeccar():
+    generate('LNN LLL')
+def québecmotorcycle():
+    generate('LNNNNNL')
+def québectruck():
+    generate('LNNNNNN')
+def newfoundland():
+    generate('LLL NNN')
+def nunavutcar():
+    generate('NNN NNN')
+def nunavutmotorcycle():
+    generate('LNN NNN')
+def albertacar():
+    generate('LLL-NNNN')
+def albertamotorcycle():
+    generate('LLLNN')
+def britishcolumbiacar():
+    generate('LLN NNL')
+def britishcolumbiamotorcycle():
+    generate('LNNNNN')
+def britishcolumbiatruck():
+    generate('LL NNNN')
+def manitobacar():
+    generate('LLL NNN')
+def manitobamotorcycle():
+    generate('NLLNN')
+def newbrunswickcar():
+    generate('LLL NNN')
+def newbrunswickmotorcycle():
+    generate('LLLNN')
+def novascotiacar():
+    generate('LLL NNN')
+def novascotiamotorcycle():
+    generate('NNNNNN')
+def peicar():
+    generate('LN NNL')
+def peimotorcycle():
+    generate('LLLN')
+def saskatchewancar():
+    generate('NNN LLL')
+def saskatchewanmotorcycle():
+    generate('NNNLL')
+def yukoncar():
+    generate('LLLNN')
+def yukonmotorcycle():
+    generate('LNNNNN')
+def northwestterritoriescar():
+    generate('NNNNNN')
+def northwestterritoriesmotorcycle():
+    generate('NNNNN')
+# Function Executions
+if vehicle_type == 1:
+    ontariocar()
+if vehicle_type == 2:
+    ontariotruck()
+if vehicle_type == 3:
+    ontariobus()
+if vehicle_type == 4:
+    ontariomotorcycle()
+if vehicle_type == 5:
+    québeccar()
+if vehicle_type == 6:
+    québecmotorcycle()
+if vehicle_type == 7:
+    québectruck()
+if vehicle_type == 8:
+    newfoundland()
+if vehicle_type == 9:
+    nunavutcar()
+if vehicle_type == 10:
+    nunavutmotorcycle()
+if vehicle_type == 11:
+    albertacar()
+if vehicle_type == 12:
+    albertamotorcycle()
+if vehicle_type == 13:
+    britishcolumbiacar()
+if vehicle_type == 14:
+    britishcolumbiamotorcycle()
+if vehicle_type == 15:
+    britishcolumbiatruck()
+if vehicle_type == 16:
+    manitobacar()
+if vehicle_type == 17:
+    manitobamotorcycle()
+if vehicle_type == 18:
+    newbrunswickcar()
+if vehicle_type == 19:
+    newbrunswickmotorcycle()
+if vehicle_type == 20:
+    novascotiacar()
+if vehicle_type == 21:
+    novascotiamotorcycle()
+if vehicle_type == 22:
+    peicar()
+if vehicle_type == 23:
+    peimotorcycle()
+if vehicle_type == 24:
+    saskatchewancar()
+if vehicle_type == 25:
+    saskatchewanmotorcycle()
+if vehicle_type == 26:
+    yukoncar()
+if vehicle_type == 27:
+    yukonmotorcycle()
+if vehicle_type == 28:
+    northwestterritoriescar()
+if vehicle_type == 29:
+    northwestterritoriesmotorcycle()
